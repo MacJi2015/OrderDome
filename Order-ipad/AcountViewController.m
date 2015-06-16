@@ -21,6 +21,7 @@
     self.NavigationBar.delegate = self;
     UINavigationItem *item = [self.NavigationBar.items objectAtIndex:0];
     [self.NavigationBar pushNavigationItem:item animated:YES];
+    
     UINavigationItem *back = [[UINavigationItem alloc] initWithTitle:@"首页"];
     NSArray *items = [[NSArray alloc] initWithObjects:back,item,nil];
     [self.NavigationBar setItems:items animated:NO];
